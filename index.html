@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/style.css" />
+<!--   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+ -->  <title>Spirit Animal Quiz</title>
+</head>
+
+<body>
+  <form>
+
+   <div id="quiz">
+              
+              <div v-if="dataFound">
+                <h1>Welcome to the {{title}}</h1>
+                <p>
+                  Click start to figure out what your spirit animal is!
+                </p>
+                
+                <button @click="startQuiz">START!</button>
+              </div>
+              
+              <div v-if="questionStage">
+                <question 
+                          :question="questions[currentQuestion]"
+                          v-on:answer="handleAnswer"
+                          :question-number="currentQuestion+1"
+                ></question>
+              </div>
+              
+              <div v-if="resultsStage">
+                Your spirit animal is a 
+                <p>{{animal}}!!!</p>
+                <p1>Here is a little bit about you: </p1>
+                <p2>{{description}}</p2>
+              </div>
+              
+            </div>
+
+          </form>
+
+<!-- <body>
+  <h1>Spirit Animal Test</h1>
+  <p>Choose the answer that fits you the best in the following questions:</p> -->
+   <!-- <div id="app"> -->
+   	 <!-- <div v-if="loading"> -->
+      <!-- <p>Loading...</p> -->
+    <!-- </div> -->
+
+    <!-- <h2>Question #1:</h2>
+    <p>If you could have any of the following super-powers, which would you choose?</p>
+
+    <div v-else>
+      <p1>
+        <button @click="firstOption">Invisibility</button>
+        <button @click="secondOption">Immortality</button>
+        <button @click="thirdOption">Super-human speed</button>
+        <button @click="fourthOption">Flight</button>
+      </p1>
+    </div> -->
+
+   <!--  <h2>Question #2:</h2>
+    <p>What is the most important part of your morning routine?</p>
+
+    <div v-else>
+      <p1>
+        <button @click="firstOption">Exercising</button>
+        <button @click="secondOption">Eating a good breakfast</button>
+        <button @click="thirdOption">Sleeping in</button>
+        <button @click="fourthOption">Meditating</button>
+      </p1>
+    </div>
+
+    <h2>Question #3:</h2>
+    <p>If you were given $1000 today and had to spend it in the next 24 hours, what would you do with it?</p> -->
+
+<!--     <div v-else>
+      <p1>
+        <button @click="firstOption">Invest</button>
+        <button @click="secondOption">Buy something for a friend</button>
+        <button @click="thirdOption">Treat yourself</button>
+        <button @click="fourthOption">Spontaneous road trip</button>
+      </p1>
+    </div>
+
+    <h2>Question #4:</h2>
+    <p>What is your favorite color?</p> -->
+
+<!--     <div v-else>
+      <p1>
+        <button @click="firstOption">Yellow</button>
+        <button @click="secondOption">Champagne</button>
+        <button @click="thirdOption">Hot pink</button>
+        <button @click="fourthOption">Turquoise</button>
+      </p1>
+    </div> -->
+
+    <!-- <button @click="submit">Submit!</button> -->
+
+    <footer>
+    <a href="https://github.com/hayleeha/creativeProject3"><img src="/GitHub-Mark.png" alt="GitHub" width="35" height= "35"></a>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="/script.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script> -->
+</body>
+
+<!-- After they hit submit...
+if(A > B, C, D)
+go to the webpage of a dolphin 
+if(B)
+go to webpage of kitten
+if(C)
+go to webpage of penguin
+if(D)
+go to webpage of lion
+if(E)
+go to webpage of llama
+
+Have to figure out how to STORE the answers...
+And what happens if it's a tie -->
+
+</html>

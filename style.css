@@ -1,0 +1,31 @@
+body{
+	background-color: #62CCBC;
+}
+
+form{
+	text-align: center;	
+}
+
+h1{
+	font-size: 70px;
+	color: #AC87B2;
+	font-family: Helvetica, sans-serif;
+	padding: 100px;
+	margin: 20px;
+}
+
+p{
+	font-size: 20px;
+	color: #AC87B2;
+	font-family: Helvetica, sans-serif;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #8198B2;
+    border: none;
+  	color: white;
+  	padding: 15px 15px;
+  	margin: 10px;
+}
