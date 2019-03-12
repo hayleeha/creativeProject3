@@ -21,7 +21,7 @@
                 <button @click="startQuiz">START!</button>
               </div>
               
-              <div v-if="questionStage">
+              <div class= "questions" v-if="questionStage">
                 <question 
                           :question="questions[currentQuestion]"
                           v-on:answer="handleAnswer"
@@ -30,10 +30,10 @@
               </div>
               
               <div v-if="resultsStage">
-                Your spirit animal is a 
-                <p>{{animal}}!!!</p>
+                <p12>Your spirit animal is a {{animal}}!!!<p12>
                 <p1>Here is a little bit about you: </p1>
                 <p2>{{description}}</p2>
+                <img v-bind:src="imagelink">
               </div>
               
             </div>

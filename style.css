@@ -1,5 +1,5 @@
 body{
-	background-color: #62CCBC;
+	background-color: #F4EEF1;
 }
 
 form{
@@ -8,24 +8,41 @@ form{
 
 h1{
 	font-size: 70px;
-	color: #AC87B2;
-	font-family: Helvetica, sans-serif;
-	padding: 100px;
-	margin: 20px;
+	color: #284254;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	padding: 50px;
+	margin: 5px;
 }
 
 p{
 	font-size: 20px;
-	color: #AC87B2;
-	font-family: Helvetica, sans-serif;
+	color: #284254;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	margin: 25px;
 }
 
 button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    background-color: #8198B2;
+    background-color: #36B196;
     border: none;
   	color: white;
   	padding: 15px 15px;
   	margin: 10px;
+}
+
+.questions{
+	padding: 100px;
+	font-size: 50px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	color: #284254;
+	margin: 20px;
+}
+
+p12{
+	font-size: 30px;
+	color: #284254;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	margin: 25px;
+	padding: 25px;
 }

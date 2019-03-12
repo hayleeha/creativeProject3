@@ -1,53 +1,53 @@
-// {
-//   "title": "Spirit Animal Quiz",
-//   "questions": [
-//     {
-//       "text": "If you could have any of the following super-powers, which would you choose?",
-//       "type": "mc",
-//       "answers": [
-//         "Invisibility",
-//         "Immortality",
-//         "Super-human speed",
-//         "Flight"
-//       ],
-//       "answer": ""
+{
+  "title": "Spirit Animal Quiz",
+  "questions": [
+    {
+      "text": "If you could have any of the following super-powers, which would you choose?",
+      "type": "mc",
+      "answers": [
+        "Invisibility",
+        "Immortality",
+        "Super-human speed",
+        "Flight"
+      ],
+      "answer": ""
       
-//     },
-//     {
-//       "text": "What is the most important part of your morning routine?",
-//       "type": "mc",
-//       "answers": [
-//         "Exercising",
-//         "Eating a good breakfast",
-//         "Sleeping in",
-//         "Meditating"
-//       ],
-//       "answer": ""
-//     },
-//     {
-//       "text": "If you were given $1000 today and had to spend it in the next 24 hours, what would you do with it?",
-//       "type": "mc",
-//       "answers": [
-//         "Invest",
-//         "Buy something for a friend",
-//         "Treat yourself",
-//         "Spontaneous road trip"
-//       ],
-//       "answer": "???"
-//     },
-//     {
-//       "text": "What is your favorite color?",
-//       "type": "mc",
-//       "answers": [
-//         "Yellow",
-//         "Hot Pink",
-//         "Turquoise",
-//         "Champagne"
-//       ],
-//       "answer": ""
-//     }
-//   ]
-// }
+    },
+    {
+      "text": "What is the most important part of your morning routine?",
+      "type": "mc",
+      "answers": [
+        "Exercising",
+        "Eating a good breakfast",
+        "Sleeping in",
+        "Meditating"
+      ],
+      "answer": ""
+    },
+    {
+      "text": "If you were given $1000 today and had to spend it in the next 24 hours, what would you do with it?",
+      "type": "mc",
+      "answers": [
+        "Invest",
+        "Buy something for a friend",
+        "Treat yourself",
+        "Spontaneous road trip"
+      ],
+      "answer": "???"
+    },
+    {
+      "text": "What is your favorite color?",
+      "type": "mc",
+      "answers": [
+        "Yellow",
+        "Hot Pink",
+        "Turquoise",
+        "Champagne"
+      ],
+      "answer": ""
+    }
+  ]
+}
 
 const quizData = 'https://api.myjson.com/bins/zxs1u';
 

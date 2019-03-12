@@ -1,4 +1,4 @@
-const quizData = 'https://api.myjson.com/bins/qq83e';
+const quizData = 'https://api.myjson.com/bins/qrsf6';
 
 const app = new Vue({
   el:'#quiz',
@@ -18,8 +18,8 @@ const app = new Vue({
       correctD:0,
       perc:null,
       animal:'',
-      description: ''
-      //image:
+      description: '',
+      imagelink:""
     }
   },
   created() {
@@ -62,31 +62,35 @@ const app = new Vue({
         {
           this.animal = "Penguin";
           this.description = "You have a free-spirited personality and love having fun. You thrive off interacting with other people and getting the job done.";
-          //img src="penguin.jpg";
+          this.imagelink ="penguin.jpg";
           console.log('penguin')
         }
         if((this.correctB > this.correctA) && (this.correctB > this.correctC) && (this.correctB > this.correctD))
         {
-          this.animal = "Kangaroo";
+          this.animal = "Golden Retriever";
           this.description = "You are a driven force for good! You are excited about the challenges that lie ahead in life and will reach great heights!"
-          console.log('kangaroo')
+          this.imagelink ="goldenRetriever.jpg";
+          console.log('goldenRetriever')
         }
-        if((this.correctC > this.correctA) && (this.correctC > this.correctB) && (this.correctB > this.correctD))
+        if((this.correctC > this.correctA) && (this.correctC > this.correctB) && (this.correctC > this.correctD))
         {
           this.animal = "Llama";
           this.description = "You are content with life and where you are going. You value the relationships with those closese to you the most and enjoy solid entertainment."
+          this.imagelink ="llama.jpg";
           console.log('llama')
         }
         if((this.correctD > this.correctA) && (this.correctD > this.correctB) && (this.correctD > this.correctC)) 
         {
           this.animal = "Kitten";
           this.description = "You are just a bundle of joy! Others love being around you and feed off your energy. You may not love to work hard, but you are always down to have fun!"
+          this.imagelink ="kitten.jpg";
           console.log('kitten')
         }
         if((this.correctA === this.correctB) && (this.correctA === this.correctC) && (this.correctA === this.correctD) && (this.correctB === this.correctC) && (this.correctB === this.correctD) && (this.correctC === this.correctD))
         {
           this.animal = "Guppy";
           this.description = "You are awesome.";
+          this.imagelink ="guppy.jpg";
           console.log('guppy');
         }
     }
@@ -110,7 +114,7 @@ Vue.component('question', {
     </div>
   </div>
 
-  <button @click="submitAnswer">Answer</button>
+  <button @click.prevent="submitAnswer">Answer</button>
 </div>
 `,
   data() {
